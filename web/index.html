@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GYG</title>
+    <style>
+
+       body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes animationloading {
+            0% {left: 0px; width: 120px;height: 120px;}
+            25% {left: 0px; transform: rotate(360deg);}
+            45% {left: 0px; width: 150px; height: 150px;}
+            100% {left: 0px; width: 120px; height: 120px;}
+        }
+        .tr{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .c{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:120px;
+            height: 120px;
+            position: relative;
+            background-color: black;
+            border-radius: 11px;
+            animation-duration: 4s;
+            animation-name: animationloading;
+            animation-iteration-count: infinite;
+            color: antiquewhite;
+        }
+        .d{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:120px;
+            height: 120px;
+            position: relative;
+            background-color: black;
+            border-radius: 11px;
+            animation-duration: 4s;
+            animation-name: animationloading;
+            animation-iteration-count: infinite;
+            color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <!--animation loading-->
+<div class="tr">
+    <div class="c">
+        <div class="d"></div>
+        <div class="d"></div>
+        <div class="d"></div>
+        <div class="d"></div>
+        <div class="d"></div>
+        <div class="d"></div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
