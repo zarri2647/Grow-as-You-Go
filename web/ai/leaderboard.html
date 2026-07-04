@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style type="text/css" media="all">
+            * {
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+            body {
+                background-color: #f4f6f9;
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .container {
+                margin-top: 50px;
+                border-radius: 12px;
+                background-color: #ffffff;
+                width: 100%;
+                max-width: 450px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+
+            .leaderboard_background {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                padding: 30px 20px;
+                text-align: center;
+                color: white;
+            }
+
+            .leaderboard_background h2 {
+                margin: 0 0 10px 0;
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+
+            .leaderboard-players {
+                padding: 15px;
+                background-color: #ffffff;
+            }
+
+            /* Player Row Styling */
+            .player-row {
+                display: flex;
+                align-items: center;
+                padding: 12px 15px;
+                margin-bottom: 10px;
+                background-color: #f8f9fa;
+                border-radius: 8px;
+                transition: transform 0.2s ease;
+            }
+
+            .player-row:hover {
+                transform: scale(1.02);
+                background-color: #f1f3f5;
+            }
+
+            /* Rank Styling */
+            .rank {
+                font-weight: bold;
+                width: 30px;
+                font-size: 16px;
+                color: #6c757d;
+            }
+
+            /* Podiums colors for top 3 */
+            .player-row:nth-child(1) .rank { color: #ffd700; font-size: 20px; } /* Gold */
+            .player-row:nth-child(2) .rank { color: #c0c0c0; font-size: 18px; } /* Silver */
+            .player-row:nth-child(3) .rank { color: #cd7f32; font-size: 17px; } /* Bronze */
+
+            /* Avatar/Initials */
+            .avatar {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background-color: #e9ecef;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                margin-right: 15px;
+                font-size: 14px;
+                color: #495057;
+            }
+
+            /* Name & Score Alignment */
+            .name {
+                flex-grow: 1;
+                font-weight: 600;
+                color: #333333;
+            }
+
+            .score {
+                font-weight: bold;
+                color: #764ba2;
+            }
+        </style>
+        <title>Leaderboard</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="leaderboard_background">
+                <h2>Top Players</h2>
+                <div>Global Rankings</div>
+            </div>
+            <div class="leaderboard-players">
+                <div class="player-row">
+                    <div class="rank">1</div>
+                    <div class="avatar" style="background-color: #ffe3e3; color: #ff6b6b;">AA</div>
+                    <div class="name">Alex Adams</div>
+                    <div class="score">2,450 pts</div>
+                </div>
+                <div class="player-row">
+                    <div class="rank">2</div>
+                    <div class="avatar" style="background-color: #e3fafc; color: #1098ad;">ca</div>
+                    <div class="name">Chloe Miller</div>
+                    <div class="score">2,120 pts</div>
+                </div>
+                <div class="rank-3 player-row">
+                    <div class="rank">3</div>
+                    <div class="avatar" style="background-color: #f3f0ff; color: #845ef7;">db</div>
+                    <div class="name">David Brown</div>
+                    <div class="score">1,980 pts</div>
+                </div>
+                <div class="player-row">
+                    <div class="rank">4</div>
+                    <div class="avatar" style="background-color: #ebfbee; color: #40c057;">em</div>
+                    <div class="name">Emma Watson</div>
+                    <div class="score">1,850 pts</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
