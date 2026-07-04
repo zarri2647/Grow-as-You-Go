@@ -100,6 +100,18 @@
                 font-weight: bold;
                 color: #764ba2;
             }
+            @keyframes smooth {
+                0%  {left: 0px;}
+                20% {left: 15px;}
+                40% {left: -15px;}
+                100% {left: 0px;}
+            }
+            .player-row{
+                position: relative;
+                animation-name: smooth;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
         </style>
         <title>Leaderboard</title>
     </head>
