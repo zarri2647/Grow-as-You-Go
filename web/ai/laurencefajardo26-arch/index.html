@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grow as You Go</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e8f5e9;
+            margin-top: 50px;
+        }
+        h1 {
+            color: green;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Grow As You Go 🌱</h1>
+<p id="message">Click the button to grow!</p>
+
+<button onclick="grow()">Grow</button>
+
+<script>
+let stage = 0;
+const growth = [
+    "🌱 Seed",
+    "🌿 Sprout",
+    "🌾 Young Plant",
+    "🌳 Tree"
+];
+
+function grow() {
+    if (stage < growth.length) {
+        document.getElementById("message").innerHTML = growth[stage];
+        stage++;
+    } else {
+        document.getElementById("message").innerHTML = "🎉 You have fully grown!";
+    }
+}
+</script>
+
+</body>
+</html>
