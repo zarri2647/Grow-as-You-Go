@@ -4,11 +4,11 @@ function changeMessage() {
         "Small progress is still progress.",
         "Believe in yourself.",
         "Success starts with one step.",
-        "Grow as you go!"
+        "Grow as you go!",
         `<a href="https://web.facebook.com/share/v/1BdVYZrRoF/">link</a>`
     ];
 
     const random = Math.floor(Math.random() * messages.length);
 
-    document.getElementById("message").textContent = messages[random];
+    document.getElementById("message").innerHTML = messages[random];
 }
