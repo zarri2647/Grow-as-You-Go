@@ -5,7 +5,7 @@ function changeMessage() {
         "Believe in yourself.",
         "Success starts with one step.",
         "Grow as you go!",
-        `<a href="https://web.facebook.com/share/v/1BdVYZrRoF/">link</a>`
+        `<a href="https://web.facebook.com/share/v/1BdVYZrRoF/" target="_blank">link</a>`
     ];
 
     const random = Math.floor(Math.random() * messages.length);
